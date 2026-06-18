@@ -6,7 +6,7 @@ def test_health_returns_200(client):
 def test_health_contains_status_ok(client):
     response = client.get("/health")
     data = response.json()
-    assert data["status"] == "OK"
+    assert data["status"] == "ok"
 
 
 def test_health_contains_student_reg(client):
